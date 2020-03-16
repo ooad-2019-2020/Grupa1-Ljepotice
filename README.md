@@ -4,6 +4,9 @@ Tema: Forelsket (Beauty centar)
 * Mirnesa Salihović
 * Lejla Pirija
 * Neira Novalić
+
+
+
 ![alt text](https://github.com/ooad-2019-2020/Grupa1-Ljepotice/blob/master/89851974_3116537261724702_4042790653447372800_n.jpg)
 
 
