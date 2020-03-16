@@ -1,9 +1,13 @@
 # Grupa1-Ljepotice
 Tema: Forelsket (Beauty centar)
+
+
 Članovi tima:
 * Mirnesa Salihović
 * Lejla Pirija
 * Neira Novalić
+
+
 
 
 
