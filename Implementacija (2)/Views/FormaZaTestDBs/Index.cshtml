@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Implementacija.Models.FormaZaTestDB>
+
+@{
+    ViewData["Title"] = "Index";
+}
+    <body style="background-color:whitesmoke">
+
+
+        <h1 style="padding-left:460px">Test</h1>
+        <hr />
+        <img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:left;position:absolute; z-index:-1 ;height:320px;padding-top:10px">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.klijent)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.tipKoze)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.odabranaZona)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.rezultat)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.klijent)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.tipKoze)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.odabranaZona)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.rezultat)
+                        </td>
+
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div style="padding-left:460px">
+            <button style="margin-top:300px; display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;" onclick="redirectOnClick()">
+                Dodaj novi test
+            </button>
+        </div>
+        <div>
+            <img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:right;position:absolute; z-index:-1 ;height:320px;padding-left:700px">
+        </div>
+    </body>
+<script>
+    function redirectOnClick() {
+        document.location = 'FormaZaTestDBs/Create';
+    }
+</script>

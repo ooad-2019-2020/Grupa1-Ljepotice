@@ -1,0 +1,53 @@
+﻿@model Implementacija.Models.RezervacijaDB
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+
+<h3>Da li ste sigurni da želite otkazati ovu rezervaciju?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.vrijemeRezervacije)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.vrijemeRezervacije)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.imeIPrezime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.imeIPrezime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.odabraniTretman)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.odabraniTretman)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tipPlacanja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tipPlacanja)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Da" class="btn btn-danger" /> |
+        <a asp-action="Index">Nazad na početnu</a>
+    </form>
+</div>
+</body>
+</html>

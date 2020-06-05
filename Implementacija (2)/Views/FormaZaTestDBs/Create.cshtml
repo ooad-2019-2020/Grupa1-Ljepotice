@@ -1,0 +1,52 @@
+﻿@model Implementacija.Models.FormaZaTestDB
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="padding-left:460px">Test</h1>
+
+<img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:left;position:absolute; z-index:-1 ;height:320px;padding-top:10px">
+<hr />
+<div class="row" style="padding-left:460px">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="klijent" class="control-label"></label>
+                <input asp-for="klijent" class="form-control" />
+                <span asp-validation-for="klijent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipKoze" class="control-label"></label>
+                <select asp-for="tipKoze" class="form-control"></select>
+                <span asp-validation-for="tipKoze" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="odabranaZona" class="control-label"></label>
+                <input asp-for="odabranaZona" class="form-control" />
+                <span asp-validation-for="odabranaZona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rezultat" class="control-label"></label>
+                <input asp-for="rezultat" class="form-control" />
+                <span asp-validation-for="rezultat" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" style="padding-left:40px">
+                <input type="submit" value="Spremi" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+
+</div>
+<div style="padding-left:460px">
+    <a asp-action="Index">Nazad na početnu stranicu</a>
+</div>
+<div>
+    <img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:right;position:absolute; z-index:-1 ;height:320px;padding-left:700px">
+</div>
+
+
+

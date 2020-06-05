@@ -1,0 +1,61 @@
+﻿@model Implementacija.Models.FormaZaTretmanDB
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="padding-left:460px">Tretman</h1>
+
+<img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:left;position:absolute; z-index:-1 ;height:320px;padding-top:10px">
+<hr />
+<div class="row" style="padding-left:460px">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="klijent" class="control-label"></label>
+                <input asp-for="klijent" class="form-control" />
+                <span asp-validation-for="klijent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tretman" class="control-label"></label>
+                <input asp-for="tretman" class="form-control" />
+                <span asp-validation-for="tretman" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="odabranaZona" class="control-label"></label>
+                <input asp-for="odabranaZona" class="form-control" />
+                <span asp-validation-for="odabranaZona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rezultatTretmana" class="control-label"></label>
+                <input asp-for="rezultatTretmana" class="form-control" />
+                <span asp-validation-for="rezultatTretmana" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tehnikaRada" class="control-label"></label>
+                <input asp-for="tehnikaRada" class="form-control" />
+                <span asp-validation-for="tehnikaRada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dodatneNapomene" class="control-label"></label>
+                <input asp-for="dodatneNapomene" class="form-control" />
+                <span asp-validation-for="dodatneNapomene" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="padding-left:40px">
+                <input type="submit" value="Spremi" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+
+</div>
+<div style="padding-left:460px">
+    <a asp-action="Index">Nazad na početnu stranicu</a>
+</div>
+<div>
+    <img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:right;position:absolute; z-index:-1 ;height:320px;padding-left:700px">
+</div>
+
+
+

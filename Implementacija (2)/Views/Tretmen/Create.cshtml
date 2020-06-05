@@ -1,0 +1,65 @@
+﻿@model Implementacija.Models.Tretman
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+    <img src="~/img/pozzz-removebg-preview.png" alt="Smiley face" style="float:right;width:400px;height:320px;padding-top:10px;padding-right:500px">
+    <div style="position:center;padding-left:200px">
+
+        <h4>Dodaj novi tretman</h4>
+
+
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="naziv" class="control-label"></label>
+                        <input asp-for="naziv" class="form-control" />
+                        <span asp-validation-for="naziv" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="cijena" class="control-label"></label>
+                        <input asp-for="cijena" class="form-control" />
+                        <span asp-validation-for="cijena" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="kategorijaTretmana" class="control-label"></label>
+                        <select asp-for="kategorijaTretmana" class="form-control"></select>
+                        <span asp-validation-for="kategorijaTretmana" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="opisTretmana" class="control-label"></label>
+                        <input asp-for="opisTretmana" class="form-control" />
+                        <span asp-validation-for="opisTretmana" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <a asp-action="Index">Nazad na početnu stranicu</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

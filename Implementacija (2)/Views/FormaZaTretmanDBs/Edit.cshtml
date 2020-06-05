@@ -1,0 +1,56 @@
+﻿@model Implementacija.Models.FormaZaTretmanDB
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>FormaZaTretmanDB</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="klijent" class="control-label"></label>
+                <input asp-for="klijent" class="form-control" />
+                <span asp-validation-for="klijent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tretman" class="control-label"></label>
+                <input asp-for="tretman" class="form-control" />
+                <span asp-validation-for="tretman" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="odabranaZona" class="control-label"></label>
+                <input asp-for="odabranaZona" class="form-control" />
+                <span asp-validation-for="odabranaZona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rezultatTretmana" class="control-label"></label>
+                <input asp-for="rezultatTretmana" class="form-control" />
+                <span asp-validation-for="rezultatTretmana" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tehnikaRada" class="control-label"></label>
+                <input asp-for="tehnikaRada" class="form-control" />
+                <span asp-validation-for="tehnikaRada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dodatneNapomene" class="control-label"></label>
+                <input asp-for="dodatneNapomene" class="form-control" />
+                <span asp-validation-for="dodatneNapomene" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

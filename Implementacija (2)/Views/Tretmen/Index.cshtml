@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Implementacija.Models.Tretman>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+   
+    <img src="~/img/nnnnnnnnnnnnnnnn.png" alt="Smiley face" style="float:left;position:absolute; z-index:-1 ;height:320px;padding-top:10px">
+    <div style="padding-left:300px ; padding-top:200px">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style=" border-right: 1px solid black ;border-bottom: 1px solid black">
+                        @Html.DisplayNameFor(model => model.naziv)
+                    </th>
+
+                    <th style=" border-right: 1px solid black ;border-bottom: 1px solid black">
+                        @Html.DisplayNameFor(model => model.cijena)
+                    </th>
+                    <th style=" border-right: 1px solid black ;border-bottom: 1px solid black">
+                        @Html.DisplayNameFor(model => model.kategorijaTretmana)
+                    </th>
+                    <th style="border-bottom: 1px solid black">
+                        @Html.DisplayNameFor(model => model.opisTretmana)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style=" border-right: 1px solid black ;border-bottom: 1px solid black">
+                            @Html.DisplayFor(modelItem => item.naziv)
+                        </td>
+                        <td style=" border-right: 1px solid black ;border-bottom: 1px solid black">
+                            @Html.DisplayFor(modelItem => item.cijena)
+                        </td>
+                        <td style=" border-right: 1px solid black ;border-bottom: 1px solid black">
+                            @Html.DisplayFor(modelItem => item.kategorijaTretmana)
+                        </td>
+                        <td style=" border-bottom: 1px solid black" >
+                            @Html.DisplayFor(modelItem => item.opisTretmana)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" style="color:blueviolet" asp-route-id="@item.ID">Izmijeni</a> |
+
+                            <a asp-action="Delete" style="color:blueviolet" asp-route-id="@item.ID">Obriši</a>
+
+                            <button class="button" style="font-size:small ;padding-left:10px;background-color:blueviolet" onclick="redirectOnClick2()">Više o tretmanu</button>
+
+                            <script>
+                                function redirectOnClick2() {
+                                    document.location = '/Home/Cjenovnik';
+                                }
+                            </script>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+        <div style="padding-left:170px">
+            <button style="margin-top:40px; display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;" onclick="redirectOnClick()">
+                Dodaj novi tretman
+            </button>
+        </div>
+    </div>  
+    <img src="~/img/nova.png" alt="Smiley face" style="float:right;position:absolute; z-index:-1 ;height:320px;padding-top:10px;padding-left:700px">
+    <script>
+        function redirectOnClick() {
+            document.location = '/Tretmen/Create';
+        }
+    </script>
+
+</body>
+</html>

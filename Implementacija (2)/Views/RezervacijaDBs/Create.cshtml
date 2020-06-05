@@ -1,0 +1,65 @@
+﻿@model Implementacija.Models.RezervacijaDB
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+    <img src="~/img/za_web_dizajn-removebg-preview.png" alt="Smiley face" style="float:right;width:400px;height:320px;padding-top:10px;padding-right:500px">
+    <div style="position:center;padding-left:200px">
+
+
+        <h4>Dodaj novu rezervaciju</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="imeIPrezime" class="control-label"></label>
+                        <input asp-for="imeIPrezime" class="form-control" />
+                        <span asp-validation-for="imeIPrezime" class="text-danger"></span>
+                    </div>
+                    <br />
+
+                    <div class="form-group">
+                        <label asp-for="vrijemeRezervacije" class="control-label"></label>
+                        <input asp-for="vrijemeRezervacije" class="form-control" />
+                        <span asp-validation-for="vrijemeRezervacije" class="text-danger"></span>
+                    </div>
+
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="odabraniTretman" class="control-label"></label>
+                        <input asp-for="odabraniTretman" class="form-control" />
+                        <span asp-validation-for="odabraniTretman" class="text-danger"></span>
+                    </div>
+
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="tipPlacanja" class="control-label"></label>
+                        <select asp-for="tipPlacanja" class="form-control"></select>
+                        <span asp-validation-for="tipPlacanja" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Dodaj" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr />
+        <div>
+            <a asp-action="Index">Nazad na početnu stranicu</a>
+        </div>
+    </div>
+</body>
+</html>
