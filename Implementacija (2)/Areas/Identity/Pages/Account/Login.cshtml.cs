@@ -76,6 +76,23 @@ namespace Implementacija.Areas.Identity.Pages.Account
         {
             returnUrl = returnUrl ?? Url.Content("~/");
 
+            if(Input.Email.Equals("neiranovalic@gmail.com"))
+            {
+                returnUrl = "~/Home/Administrator";
+            }
+
+             if(Input.Email.Equals("mirnesasalihovic@gmail.com"))
+            {
+                returnUrl = "~/Home/Kozmeticar";
+            }
+
+              if(Input.Email.Equals("lejlapirija@gmail.com"))
+            {
+                returnUrl = "~/Home/Recepcioner";
+            }
+             
+
+
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout

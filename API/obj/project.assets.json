@@ -8595,11 +8595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laptop\\Desktop\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Laptop\\Source\\Repos\\Grupa1-Ljepotice\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Laptop\\Desktop\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Laptop\\Source\\Repos\\Grupa1-Ljepotice\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Laptop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Laptop\\Desktop\\API\\obj\\",
+      "outputPath": "C:\\Users\\Laptop\\Source\\Repos\\Grupa1-Ljepotice\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
