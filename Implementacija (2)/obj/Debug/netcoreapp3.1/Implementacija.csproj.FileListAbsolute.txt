@@ -601,3 +601,8 @@ C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netco
 C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Implementacija.dll
 C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Implementacija.pdb
 C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Implementacija.genruntimeconfig.cache
+C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Razor\Views\UplatnicaDBs\Create.cshtml.g.cs
+C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Razor\Views\UplatnicaDBs\Delete.cshtml.g.cs
+C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Razor\Views\UplatnicaDBs\Details.cshtml.g.cs
+C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Razor\Views\UplatnicaDBs\Edit.cshtml.g.cs
+C:\Users\Laptop\Source\Repos\Grupa1-Ljepotice\Implementacija (2)\obj\Debug\netcoreapp3.1\Razor\Views\UplatnicaDBs\Index.cshtml.g.cs

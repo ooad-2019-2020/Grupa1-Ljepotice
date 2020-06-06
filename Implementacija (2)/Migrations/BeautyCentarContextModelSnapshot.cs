@@ -186,8 +186,8 @@ namespace Implementacija.Migrations
                     b.Property<double>("cijenaTretmana")
                         .HasColumnType("float");
 
-                    b.Property<int?>("klijentID")
-                        .HasColumnType("int");
+                    b.Property<string>("klijent")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("nacinPlacanja")
                         .HasColumnType("int");
@@ -196,8 +196,6 @@ namespace Implementacija.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("klijentID");
 
                     b.ToTable("Uplatnica");
                 });
@@ -241,13 +239,6 @@ namespace Implementacija.Migrations
                     b.HasOne("Implementacija.Models.KorisnikDB", null)
                         .WithMany("listaOdradjenihTretmana")
                         .HasForeignKey("KorisnikDBID");
-                });
-
-            modelBuilder.Entity("Implementacija.Models.UplatnicaDB", b =>
-                {
-                    b.HasOne("Implementacija.Models.KorisnikDB", "klijent")
-                        .WithMany()
-                        .HasForeignKey("klijentID");
                 });
 #pragma warning restore 612, 618
         }
