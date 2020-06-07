@@ -90,7 +90,12 @@ namespace Implementacija.Areas.Identity.Pages.Account
             {
                 returnUrl = "~/Home/Recepcioner";
             }
-             
+
+            if (Input.Email.Equals("johndoe@gmail.com"))
+            {
+                returnUrl = "~/Home/Korisnik";
+            }
+
 
 
             if (ModelState.IsValid)

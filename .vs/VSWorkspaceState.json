@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API",
-    "\\API\\Controllers",
-    "\\API\\obj",
-    "\\API\\Properties",
     "\\Implementacija (2)",
-    "\\Implementacija (2)\\obj",
+    "\\Implementacija (2)\\Areas",
+    "\\Implementacija (2)\\Areas\\Identity",
+    "\\Implementacija (2)\\Areas\\Identity\\Pages",
+    "\\Implementacija (2)\\Areas\\Identity\\Pages\\Account",
+    "\\Implementacija (2)\\Controllers",
     "\\Implementacija (2)\\Properties",
     "\\Implementacija (2)\\Views",
     "\\Implementacija (2)\\Views\\KorisnikDBs"
